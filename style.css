@@ -1,0 +1,253 @@
+﻿/* цвет фона и рамки навигационного меню */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default  {
+    background-color: #2e4d0f;
+    border-color: #eb3a09;
+   color: #ecf0f1;
+}
+/* цвет текста, содержащий название сайта или бренда */
+.navbar-default .navbar-brand {
+    font-family: Monotype Corsiva, cursive;
+    font-size: 25px;
+    color: #ecf0f1;
+}
+/* цвет текста (название сайта или бренда), при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #fa6d20;
+}
+/* Цвет пунктов навигационного меню */
+
+.navbar-default .navbar-nav > li > a {
+  font-family: Monotype Corsiva, cursive;
+    font-size: 25px;
+    color: #ecf0f1;
+}
+/* Цвет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #d1ffed;
+}
+/* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+ 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #d1ffed;
+    background-color: #fa6d20;
+}
+/* Цвет и фон открытого пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #d1ffed;
+    background-color: #27ae60;
+}
+
+/* CSS стили для мобильных устройств */
+/* Цвет рамки у кнопки, которая открывает меню */
+.navbar-default .navbar-toggle {
+    border-color: #27ae60;
+}
+/* Цвет фона кнопки (которая открывает меню) при поднесении к ней курсора мышки или при нахождении её в фокусе */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #27ae60;
+}
+/* Цвет полосочек в кнопочке, которая открывает меню */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+/* Цвет пунктов меню в раскрывающихся списках */
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ecf0f1;
+  }
+/* Цвет и фон пункта меню в раскрывающихся списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #d1ffed;
+        background-color: #27ae60;
+    }
+}
+/* Отступ сверху для содержимого body (высота navbar = 50px)*/
+body
+{
+padding-top: 30px;
+}
+/* Заставка */
+.home { 
+/* Отступ для содержимого, помещенного в splash */
+padding:10em 0 10em;
+/* Картинка, которая используются для splash */
+background-image:url(http://s018.radikal.ru/i501/1703/36/2f22855c9f24.jpg);
+/* Масштабируем картинку с сохранением пропорций */
+background-size:cover;
+/* Запрещаем фоновому изображению прокручиваться, т.е. делаем его неподвижным */
+background-attachment:fixed;
+/* Цвет текста */
+color: #C0C0C0;
+/* Выравниваем текста внутри splash по центру */
+text-align:center;
+  /*Стиль текста*/
+  font-family: Monotype Corsiva, cursive;
+  font-size: 25px;
+}
+.home h1{
+  font-size: 80px;
+}
+
+.about {
+  padding:1em 0 1em;
+  background-image:url(http://i075.radikal.ru/1703/c8/fc90720f06a8.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+  text-align:center;
+  font-family: Monotype Corsiva, cursive;
+  font-size: 30px;
+}
+.about h2 {
+  font-size: 80px;
+  text-align:right;
+}
+
+.portfolio {
+  padding:1em 0 1em;
+  background-image:url(http://s020.radikal.ru/i705/1703/e7/e48fed17dc3e.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+  text-align:center;
+  font-family: Monotype Corsiva, cursive;
+  font-size: 30px;
+  color: #fff;
+  
+}
+.portfolio h2 {
+  font-size: 80px;
+  text-align:right;
+}
+.col-xs-5 {
+  /*border: 4px solid black;*/
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 10px;
+  color: #000;
+}
+.portfolio a{
+  text-decoration: none;
+  color: #000;
+}
+
+.portfolio .thumbnail a div.caption{
+  display:block;
+  background:rgba(0,0,0,0.7);
+  color:#fff;
+  font-family:Monotype Corsiva, cursive;
+  font-weight:400;
+  font-size:25px;
+  position:absolute;
+  overflow:hidden;
+  text-shadow:1px 1px 1px #303857;
+  opacity:0;
+  filter:alpha(opacity=0);
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  -ms-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+  height: 94%;
+  width: 96%;
+ 
+}
+.portfolio .thumbnail a:hover div.caption{
+  opacity:1;
+  filter:alpha(opacity=80);
+}
+
+h3{
+  /*font-weight: bold;*/
+  text-decoration:underline;
+}
+
+
+.contact {
+  padding:1em 0 1em;
+  background-image:url(http://s019.radikal.ru/i622/1703/0c/0ac5b48eae61.jpg);/*(http://s019.radikal.ru/i621/1703/1c/f39292dd2d91.jpg);*/
+  background-size:cover;
+  background-attachment:fixed;
+  text-align:center;
+  font-family: Monotype Corsiva, cursive;
+  font-size: 30px;
+  color: #000;
+}
+.contact h2 {
+  font-size: 80px;
+  text-align:right;
+}
+
+.img-circle {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin: 0 50px;
+    vertical-align: bottom;
+    background: url("https://raw.githubusercontent.com/konsav/social-icons/master/social-icons.png") no-repeat; 
+}
+
+
+.icon-github {
+    background-position: -319px -559px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.icon-github:hover {
+   -o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+.icon-codepen {
+    background-position: -439px -559px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.icon-codepen:hover {
+   -o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+
+
+}
+
+.icon-google {
+    background-position: -319px -79px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.icon-google:hover {
+   -o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+
+
+.foot {
+  margin-top: 50px;
+  color: #000;
+  font-size: 15px;
+}
